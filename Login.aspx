@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="page">
         <div id="main">
-            <h1>Welcome to the Halloween Store</h1>
+            <h1>Please sign in</h1>
             <p>
                 <asp:Login ID="Login1" runat="server">
                 </asp:Login>
