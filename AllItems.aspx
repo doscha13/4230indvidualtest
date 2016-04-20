@@ -8,15 +8,13 @@
     <h1 class="pageTitle">All Items</h1>
     <hr />
 
-    <asp:SqlDataSource ID="ItemDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Item_ID], [Item_Picture] FROM [Item]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db %>" SelectCommand="SELECT [Item_ID], [Item_Picture] FROM [Item]"></asp:SqlDataSource>
 
-    
-    <asp:DataList ID="DataList1" runat="server" DataKeyField="Item_ID" DataSourceID="ItemDataSource" RepeatDirection="Horizontal">
+    <asp:DataList ID="DataList1" runat="server" DataKeyField="Item_ID" DataSourceID="SqlDataSource1" RepeatDirection="Horizontal">
         <ItemTemplate>
-             <asp:HyperLink ID="sideHyperLink" runat="server" NavigateUrl=' <%# "Item.aspx?Item_ID=" 
-                                 + Eval("Item_ID")%>'>
-                 <asp:Image ID="Image1" ImageUrl='<%# Eval("Item_Picture") %>' runat="server" class="img-responsive" />
-             </asp:HyperLink>
+            <asp:HyperLink ID="sideHyperLink" runat="server" NavigateUrl=' <%# "Heroes.aspx?Item_ID=" + Eval("Item_ID") %>'>
+                    <asp:Image ID="Image1" ImageUrl='<%# Eval("Item_Picture") %>' runat="server" class="img-responsive" />
+                </asp:HyperLink>
         </ItemTemplate>
     </asp:DataList>
 

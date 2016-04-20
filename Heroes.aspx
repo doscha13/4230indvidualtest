@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Hero_ID], [Int_Stat], [Agi_Stat], [Damage], [Movement_Speed], [Armor], [Biography], [Skill1], [Skill5], [Str_Stat], [Hero_Picture], [Hero_Name], [Skill4], [Skill3], [Skill2] FROM [Hero] WHERE ([Hero_ID] = @Hero_ID)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db %>" SelectCommand="SELECT [Hero_ID], [Int_Stat], [Agi_Stat], [Damage], [Movement_Speed], [Armor], [Biography], [Skill1], [Skill5], [Str_Stat], [Hero_Picture], [Hero_Name], [Skill4], [Skill3], [Skill2] FROM [Hero] WHERE ([Hero_ID] = @Hero_ID)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Hero_ID" QueryStringField="Hero_ID" Type="Int32" />
         </SelectParameters>
