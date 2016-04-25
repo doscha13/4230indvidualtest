@@ -4,5 +4,16 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="col-md-14 mainPage">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 guide">
+            <h1>Create a guide</h1>
+
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+   
 </asp:Content>
 

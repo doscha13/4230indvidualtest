@@ -1,7 +1,14 @@
-﻿.heroImage {
+﻿#imageAndStats{
+    margin-top:60px;
+    border:thick;
+    border-color:red;
+}
 
+#heroBio {
+    margin-top:50px;
 }
 
 .pageTitle {
     text-align:center;
+    font-size:x-large;
 }

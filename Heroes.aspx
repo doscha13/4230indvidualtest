@@ -8,12 +8,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" id="topRow">
-                <div class="col-md-12" id="title">
-                    <asp:Label ID="lblHeroName" runat="server" CssClass="pageTitle"></asp:Label>
-                </div>
-
                 <div class="col-md-5" id="imageAndStats">
-                    <asp:Image ID="Image1" ImageUrl='<%# Eval("Hero_Picture") %>' runat="server" class="img-responsive" CssClass="heroImage" />
+                    <asp:Label ID="lblHeroName" runat="server" CssClass="pageTitle"></asp:Label><br /> <br /> <br />
+                    <asp:Image ID="Image1" ImageUrl='<%# Eval("Hero_Picture") %>' runat="server" class="img-responsive" CssClass="heroImage" /> 
                 </div>
 
                 <div class="col-md-7" id="heroBio">
@@ -21,8 +18,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -35,10 +30,8 @@
         </div>
     </div>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db %>" SelectCommand="SELECT [Hero_ID], [Int_Stat], [Agi_Stat], [Damage], [Movement_Speed], [Armor], [Biography], [Skill1], [Skill5], [Str_Stat], [Hero_Picture], [Hero_Name], [Skill4], [Skill3], [Skill2] FROM [Hero] WHERE ([Hero_ID] = @Hero_ID)">
-        <SelectParameters>
-            <asp:QueryStringParameter Name="Hero_ID" QueryStringField="Hero_ID" Type="Int32" />
-        </SelectParameters>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db %>" 
+        SelectCommand="SELECT [Hero_ID], [Hero_Picture], [Hero_Name], [Int_Stat], [Agi_Stat], [Str_Stat], [Damage], [Movement_Speed], [Skill5], [Skill4], [Skill3], [Skill2], [Skill1], [Biography], [Armor] FROM [Hero]">
     </asp:SqlDataSource>
 </asp:Content>
 

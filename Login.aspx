@@ -6,23 +6,23 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="page">
-        <div id="main">
-<<<<<<< Updated upstream
-            <h1>Please sign in</h1>
-=======
-            <h1>Welcome!</h1>
->>>>>>> Stashed changes
-            <p>
-                <asp:Login ID="Login1" runat="server" >
-                </asp:Login>
-            </p>
-            <p>
-                Forgot your password?&nbsp;<asp:HyperLink ID="HyperLink1" 
-                    runat="server" NavigateUrl="~/PasswordRecovery.aspx">Click here</asp:HyperLink>
-                <br />
-                Need to create a new account?
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CreateUser.aspx">Click here</asp:HyperLink>
-            </p>
+        <div class="col-lg-14 row" id="mainDiv">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <h1>Please sign in</h1>
+                <p class="loginSection">
+                    <asp:Login ID="Login1" runat="server" FailureText="Please try again.">
+                    </asp:Login>
+                </p>
+                <p class="forgotPassSection">
+                    Forgot your password?&nbsp;<asp:HyperLink ID="HyperLink1" 
+                        runat="server" NavigateUrl="~/PasswordRecovery.aspx">Click here</asp:HyperLink>
+                    <br />
+                    Need to create a new account?
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CreateUser.aspx">Click here</asp:HyperLink>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
 </asp:Content>
