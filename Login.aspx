@@ -7,9 +7,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="page">
         <div id="main">
+<<<<<<< Updated upstream
             <h1>Please sign in</h1>
+=======
+            <h1>Welcome!</h1>
+>>>>>>> Stashed changes
             <p>
-                <asp:Login ID="Login1" runat="server">
+                <asp:Login ID="Login1" runat="server" >
                 </asp:Login>
             </p>
             <p>

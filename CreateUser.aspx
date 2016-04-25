@@ -1,10 +1,20 @@
+<<<<<<< Updated upstream
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DotaMasterPage.master" AutoEventWireup="true" CodeFile="CreateUser.aspx.cs" Inherits="CreateUser" %>
+=======
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DotaMasterPage.master" AutoEventWireup="true" CodeFile="CreateUser.aspx.cs" Inherits="Default2" %>
+>>>>>>> Stashed changes
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
 </asp:Content>
 
+<<<<<<< Updated upstream
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+=======
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+>>>>>>> Stashed changes
     <div id="page">
         <div id="main">
             <h1>The Halloween Store - My Account</h1>
@@ -118,7 +128,11 @@
                                         <td align="right" colspan="2">
                                             <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" 
                                                 CommandName="Continue" Text="Continue" ValidationGroup="CreateUserWizard1"
+<<<<<<< Updated upstream
                                                 PostBackUrl="MyAccount/MyAccount.aspx" />
+=======
+                                                PostBackUrl="UserAccount/UserPage.aspx" />
+>>>>>>> Stashed changes
                                         </td>
                                     </tr>
                                 </table>
