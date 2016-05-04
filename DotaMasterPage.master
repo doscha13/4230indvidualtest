@@ -54,19 +54,18 @@
                     </ul>
                     </li>
                 </ul>
-            <div class="navbar-form navbar-left">
-                <div class="form-group">
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+            <div class="navbar-left" style="overflow:hidden" id="searchSection">
+                <div">
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="textSearch"></asp:TextBox>
                 </div>
-                    <asp:Button ID="searchBtn" runat="server" onclick="searchBtn_Click" Text="Submit" CssClass="btn btn-default"/>
-            </div>
-                <div>
-                    <img src="Images/Other/DotaBanner.png" height="60" width="300" />
+                <div class="searchButton">
+                    <asp:Button ID="searchBtn" runat="server" onclick="searchBtn_Click" Text="Search" CssClass="btn btn-default searchBtn"/>
+                    <!-- <img src="Images/Other/DotaBanner.png" height="60" width="300" class="navImage" /> -->
                 </div>
-            </div>
+             </div>
+        </div>
         </div>
     </nav>
-
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -86,7 +85,11 @@
                 </div>
             </div>
         </div>
+
+
+
     </form>
+    
 
     <!-- JQuery -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

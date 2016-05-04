@@ -15,6 +15,12 @@ public partial class Heroes : System.Web.UI.Page
         Image1.ImageUrl = h.HeroPicture;
         lblHeroName.Text = h.HeroName;
         lblHeroBio.Text = h.Biography;
+        intLabel.Text = h.Int_Stat;
+        strLabel.Text = h.Str_Stat;
+        agiLabel.Text = h.Agi_Stat;
+        armorLabel.Text = h.Armor;
+        dmgLabel.Text = h.Damage;
+        movespeedLabel.Text = h.MovementSpeed;
         
     }
 
@@ -41,6 +47,13 @@ public partial class Heroes : System.Web.UI.Page
         h.HeroName = row["Hero_Name"].ToString();
         h.HeroPicture = row["Hero_Picture"].ToString();
 
+        SqlDataSource2.SelectParameters["Ability_ID"].DefaultValue = h.Skill1.ToString();
+        SqlDataSource3.SelectParameters["Ability_ID"].DefaultValue = h.Skill2.ToString();
+        SqlDataSource4.SelectParameters["Ability_ID"].DefaultValue = h.Skill3.ToString();
+        SqlDataSource5.SelectParameters["Ability_ID"].DefaultValue = h.Skill4.ToString();
+
+
         return h;
     }
+
 }

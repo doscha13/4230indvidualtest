@@ -6,14 +6,25 @@ using System.Web;
 /// <summary>
 /// Summary description for Product
 /// </summary>
-public class Product
+public class Item
 {
-    public int ProductID;
-    public string ProductName { get; set; }
-    public string Description { get; set; }
-    public decimal UnitPrice { get; set; }
-    public double Weight { get; set; }
-    public string ImageFile { get; set; }
-    public string BrandImage { get; set; }
-    public int ProductOnHand { get; set; }
-}
+    public int ItemID;
+    public string ItemName { get; set; }
+    public string ItemDescription { get; set; }
+    public string Cooldown { get; set; }
+    public string AddAtt1 { get; set; }
+    public string AddAtt2 { get; set; }
+    public string AddAtt3 { get; set; }
+    public string AddAtt4 { get; set; }
+    public string AddAtt5 { get; set; }
+    public string BonusEffect1 { get; set; }
+    public string BonusEffect2 { get; set; }
+    public string BonusEffect3 { get; set; }
+    public string BonusEffect4 { get; set; }
+    public string BonusEffect5 { get; set; }
+    public string BonusEffect6 { get; set; }
+    public string ActiveDescription { get; set; }
+    public string Passive_Description { get; set; }
+    public string ItemPicture { get; set; }
+    public string GoldCost { get; set; }
+}    
